@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+     <nav class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-transparent bg-clip-text gradient-bg">PORTFOLIO<span class="text-accent">.</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-700 hover:text-purple-600">Home</a>
+                <a href="about.html" class="nav-link text-gray-700 hover:text-purple-600">About</a>
+                <a href="projects.html" class="nav-link text-gray-700 hover:text-purple-600">Projects</a>
+                <a href="skills.html" class="nav-link text-gray-700 hover:text-purple-600">Skills</a>
+                <a href="contact.html" class="nav-link text-gray-700 hover:text-purple-600">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+
+
+        <section id="about" class="py-20 bg-white">   
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                <span class="relative">
+                    Projects
+                    <span class="absolute bottom-0 left-0 w-full h-1 gradient-bg rounded-full"></span>
+                </span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <img src="FFC.png" alt="Project 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">FILE FORMAT CONVERTER</h3>
+                    <p class="text-gray-600 mb-4">This is a simple and efficient web application that allows users to convert files between DOCX and PDF formats. The project is designed to make document conversion quick and user-friendly through a clean web interface. Users can upload a file, select the desired conversion direction (DOCX to PDF or PDF to DOCX), and download the converted file instantly.</p>
+                    <a href="https://balraj-shrimal.github.io/convrter-app/" class="text-primary hover:underline">View Project</a>
+                </div>
+
+                <!-- for add more -->
+            </div>
+</body>
+</html>
