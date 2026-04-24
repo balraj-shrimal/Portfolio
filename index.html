@@ -1,54 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>balraj_shrimal Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css"/>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Balraj Shrimal — CSE Student & Aspiring Software Developer Portfolio." />
+  <title>Balraj Shrimal — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-transparent bg-clip-text gradient-bg">PORTFOLIO<span class="text-accent">.</span></a>
-            <div class="hidden md:flex space-x-8">
-                <a href="index.html" class="nav-link text-gray-700 hover:text-purple-600">Home</a>
-                <a href="about.html" class="nav-link text-gray-700 hover:text-purple-600">About</a>
-                <a href="projects.html" class="nav-link text-gray-700 hover:text-purple-600">Projects</a>
-                <a href="skills.html" class="nav-link text-gray-700 hover:text-purple-600">Skills</a>
-                <a href="contact.html" class="nav-link text-gray-700 hover:text-purple-600">Contact</a>
-            </div>
-            <button class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-        </div>
-    </nav>
 
-    <section id="home" class="min-h-screen pt-20 flex items-center gradient-bg text-white">
-        <div class="max-w-6xl mx-auto px-6 py-16 md:py-0 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-12 md:mb-0 animate__animated animate__fadeInLeft">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">Hi, I'm <span class="text-accent">Balraj Shrimal</span></h1>
-                <h2 class="text-xl md:text-2xl mb-8">Creative Student & Aspiring Software Developer</h2>
-                <p class="text-lg mb-8 text-gray-200 max-w-lg">Welcome to my portfolio showcasing my academic projects, creative works, and growing skillset as a computer science engineering student.</p>
-                <div class="flex space-x-4">
-                    <a href="projects.html" class="px-6 py-3 bg-white text-purple-600 rounded-full font-medium hover:bg-opacity-90 transition">View Work</a>
-                    <a href="contact.html" class="px-6 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:text-purple-600 transition">Contact Me</a>
-                </div>
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">BS<span style="color:var(--pink)">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html"     class="nav-link active">Home</a></li>
+      <li><a href="about.html"    class="nav-link">About</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="skills.html"   class="nav-link">Skills</a></li>
+      <li><a href="contact.html"  class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html"     class="nav-link active">Home</a>
+    <a href="about.html"    class="nav-link">About</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="skills.html"   class="nav-link">Skills</a>
+    <a href="contact.html"  class="nav-link">Contact</a>
+  </div>
+
+  <div class="page-wrapper">
+    <section class="section hero">
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- LEFT -->
+          <div class="fade-in">
+            <div class="hero-badge">
+              <svg width="8" height="8"><circle cx="4" cy="4" r="4" fill="var(--purple-l)"/></svg>
+              Open to Opportunities
             </div>
-            <div class="md:w-1/2 flex justify-center animate__animated animate__fadeInRight">
-                <div class="relative floating">
-                    <div class="w-64 h-64 md:w-80 md:h-80 bg-purple-200 rounded-full opacity-20 absolute top-0 left-0"></div>
-                    <div class="w-64 h-64 md:w-80 md:h-80 bg-pink-200 rounded-full opacity-20 absolute -bottom-8 -right-8"></div>
-                    <img src="itss mee.jpg" alt="Stylized portrait of a cheerful young student with colorful abstract background" class="relative z-10 w-64 h-64 md:w-80 md:h-80 object-cover rounded-lg shadow-2xl">
-                </div>
+
+            <h1 class="hero-title">
+              Hi, I'm<br/><span class="grad-text">Balraj Shrimal</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Creative Student &amp; Aspiring Software Developer. Welcome to my portfolio showcasing
+              my academic projects, creative works, and growing skillset as a CSE student.
+            </p>
+
+            <div class="hero-cta">
+              <a href="projects.html" class="btn btn-primary">
+                View Work
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="contact.html" class="btn btn-outline">Contact Me</a>
             </div>
+
+            <div class="hero-stats">
+              <div>
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Years Learning</div>
+              </div>
+              <div>
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Technologies</div>
+              </div>
+              <div>
+                <div class="stat-number">2027</div>
+                <div class="stat-label">Graduation</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="hero-image-wrap fade-in" style="transition-delay:0.15s">
+            <div class="hero-image-ring floating">
+              <img src="pp.jpg" alt="Balraj Shrimal" />
+            </div>
+          </div>
+
         </div>
+      </div>
     </section>
 
-   
+    <!-- Quick highlights -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem;">
+          <div class="glass-card fade-in" style="padding:1.6rem;display:flex;align-items:center;gap:1rem;">
+            <div style="font-size:1.75rem">💡</div>
+            <div>
+              <div style="font-weight:700;font-size:0.93rem;margin-bottom:3px;">Problem Solver</div>
+              <div style="font-size:0.8rem;color:var(--text-muted);">DSA &amp; Logic Building</div>
+            </div>
+          </div>
+          <div class="glass-card fade-in" style="padding:1.6rem;display:flex;align-items:center;gap:1rem;transition-delay:0.1s">
+            <div style="font-size:1.75rem">🛠️</div>
+            <div>
+              <div style="font-weight:700;font-size:0.93rem;margin-bottom:3px;">Developer</div>
+              <div style="font-size:0.8rem;color:var(--text-muted);">HTML, CSS, JS, Java</div>
+            </div>
+          </div>
+          <div class="glass-card fade-in" style="padding:1.6rem;display:flex;align-items:center;gap:1rem;transition-delay:0.2s">
+            <div style="font-size:1.75rem">🎓</div>
+            <div>
+              <div style="font-weight:700;font-size:0.93rem;margin-bottom:3px;">CSE Student</div>
+              <div style="font-size:0.8rem;color:var(--text-muted);">N.K. Orchid College, Solapur</div>
+            </div>
+          </div>
+          <div class="glass-card fade-in" style="padding:1.6rem;display:flex;align-items:center;gap:1rem;transition-delay:0.3s">
+            <div style="font-size:1.75rem">📈</div>
+            <div>
+              <div style="font-weight:700;font-size:0.93rem;margin-bottom:3px;">Active on LeetCode</div>
+              <div style="font-size:0.8rem;color:var(--text-muted);">Consistent daily practice</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                        </body>
-                        </html>
+    <footer>
+      <p>Designed &amp; Built by <span>Balraj Shrimal</span> &copy; 2025</p>
+    </footer>
+  </div>
+
+  <button id="scrollTop" aria-label="Scroll to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', () =>
+      document.getElementById('navMobile').classList.toggle('open'));
+
+    const topBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => topBtn.classList.toggle('show', window.scrollY > 300));
+    topBtn.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+
+    const obs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), { threshold:0.12 });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>

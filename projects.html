@@ -1,52 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="style.css"/>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Balraj Shrimal — File Format Converter web app." />
+  <title>Projects — Balraj Shrimal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-     <nav class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-transparent bg-clip-text gradient-bg">PORTFOLIO<span class="text-accent">.</span></a>
-            <div class="hidden md:flex space-x-8">
-                <a href="index.html" class="nav-link text-gray-700 hover:text-purple-600">Home</a>
-                <a href="about.html" class="nav-link text-gray-700 hover:text-purple-600">About</a>
-                <a href="projects.html" class="nav-link text-gray-700 hover:text-purple-600">Projects</a>
-                <a href="skills.html" class="nav-link text-gray-700 hover:text-purple-600">Skills</a>
-                <a href="contact.html" class="nav-link text-gray-700 hover:text-purple-600">Contact</a>
-            </div>
-            <button class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">BS<span style="color:var(--pink)">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html"     class="nav-link">Home</a></li>
+      <li><a href="about.html"    class="nav-link">About</a></li>
+      <li><a href="projects.html" class="nav-link active">Projects</a></li>
+      <li><a href="skills.html"   class="nav-link">Skills</a></li>
+      <li><a href="contact.html"  class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html"     class="nav-link">Home</a>
+    <a href="about.html"    class="nav-link">About</a>
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="skills.html"   class="nav-link">Skills</a>
+    <a href="contact.html"  class="nav-link">Contact</a>
+  </div>
+
+  <div class="page-wrapper">
+    <section class="section">
+      <div class="container">
+
+        <!-- Header -->
+        <div style="text-align:center;margin-bottom:3.5rem;" class="fade-in">
+          <div class="section-label">My Work</div>
+          <h1 class="section-title">Featured <span class="grad-text">Projects</span></h1>
+          <p class="section-subtitle" style="margin:0 auto;">
+            A curated selection of projects I've built — from real-world tools to experimental ideas.
+          </p>
         </div>
-    </nav>
 
+        <!-- Projects Grid -->
+        <div class="projects-grid">
 
-
-        <section id="about" class="py-20 bg-white">   
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
-                <span class="relative">
-                    Projects
-                    <span class="absolute bottom-0 left-0 w-full h-1 gradient-bg rounded-full"></span>
-                </span>
-            </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                    <img src="FFC.png" alt="Project 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                    <h3 class="text-xl font-semibold mb-2">FILE FORMAT CONVERTER</h3>
-                    <p class="text-gray-600 mb-4">This is a simple and efficient web application that allows users to convert files between DOCX and PDF formats. The project is designed to make document conversion quick and user-friendly through a clean web interface. Users can upload a file, select the desired conversion direction (DOCX to PDF or PDF to DOCX), and download the converted file instantly.</p>
-                    <a href="https://balraj-shrimal.github.io/convrter-app/" class="text-primary hover:underline">View Project</a>
-                </div>
-
-                <!-- for add more -->
+          <!-- File Format Converter -->
+          <div class="project-card fade-in">
+            <img src="FFC.png" alt="File Format Converter" />
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="badge badge-purple">Web App</span>
+                <span class="badge badge-pink">Open Source</span>
+              </div>
+              <h3>FILE FORMAT CONVERTER</h3>
+              <p>
+                A simple and efficient web application that allows users to convert files between
+                DOCX and PDF formats. Users can upload a file, select the conversion direction
+                (DOCX to PDF or PDF to DOCX), and download the converted file instantly.
+              </p>
+              <a href="https://balraj-shrimal.github.io/convrter-app/" target="_blank" rel="noopener" class="project-link">
+                View Project
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <path d="M15 3h6v6M10 14L21 3"/>
+                </svg>
+              </a>
             </div>
+          </div>
+
+        </div>
+
+        <!-- More coming -->
+        <div class="fade-in" style="text-align:center;margin-top:3rem;padding:1.75rem;border:1px dashed rgba(139,92,246,0.25);border-radius:var(--radius-lg);color:var(--text-muted);">
+          <p style="font-size:0.9rem;">
+            More projects coming soon.
+            <a href="https://github.com/balraj-shrimal" target="_blank" style="color:var(--purple-l);font-weight:600;margin-left:6px;">Follow on GitHub →</a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>Designed &amp; Built by <span>Balraj Shrimal</span> &copy; 2025</p>
+    </footer>
+  </div>
+
+  <button id="scrollTop" aria-label="Scroll to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', () =>
+      document.getElementById('navMobile').classList.toggle('open'));
+
+    const topBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => topBtn.classList.toggle('show', window.scrollY > 300));
+    topBtn.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+
+    const obs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), { threshold:0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+  </script>
 </body>
 </html>
